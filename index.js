@@ -9,5 +9,14 @@
 //         <h1>I'm learning React</h1>
 //     )
 // }
-ReactDOM.render(<h1 className="Greeting">hi i am nikhil poojari</h1>,document.getElementById("root"))
-ReactDOM.render(<h1>shut the fuck up</h1>,document.getElementById("root"))
+const  nav=(
+    <nav>
+        <h1>NP</h1>
+        <ul>
+            <li>About me</li>
+            <li>Projects</li>
+            <li>Contacts</li>
+        </ul>
+    </nav>
+)
+ReactDOM.render(nav,document.getElementById("root"))
