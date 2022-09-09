@@ -1,0 +1,1 @@
+ReactDOM.render(<ul><li>idli</li><li>vada pav</li></ul>, document.getElementById("root")) 
