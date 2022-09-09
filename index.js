@@ -10,13 +10,14 @@
 //     )
 // }
 const  nav=(
-    <nav>
-        <h1>NP</h1>
-        <ul>
-            <li>About me</li>
-            <li>Projects</li>
-            <li>Contacts</li>
-        </ul>
-    </nav>
+    <div>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" height="50px"></img>
+        <h1>Fun facts about React</h1>
+        <ol>
+            <li>I also dont know</li>
+            <li>Learning this now</li>
+            <li>Seem fine till now</li>
+        </ol>
+    </div>
 )
 ReactDOM.render(nav,document.getElementById("root"))
