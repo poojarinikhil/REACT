@@ -24,26 +24,37 @@
 function Header(){
     return(
         <header>
-            <nav>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="reactimg" height = "50px"/>
-                <h1>Reason to like react js</h1>
+            <nav className="nav">
+                <img className= "Image" src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="reactimg" />
+                <ul className = "nav-items">
+                    <li>Pricing</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                </ul>
             </nav>
         </header>
+    )
+}
+function Footer(){
+    return(
+    <footer className="footer">
+    <p><small>@poojari development. All rights reserved</small></p>
+    </footer>
     )
 }
 function Unorderlist(){
     return(
         <div>
         <Header/>
+        <h1>Reason to like react js</h1>
         <ul>
             <li>it is fun to learning</li>
             <li>nice things we can learn</li>
             <li>I got to get a job</li>
         </ul>
-        <footer>
-            <p><small>@poojari development. All rights reserved</small></p>
-        </footer>
+        <Footer/>
         </div>
     )
 }
+
 ReactDOM.render(<Unorderlist/>,document.getElementById("root"))
