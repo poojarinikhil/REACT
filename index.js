@@ -21,40 +21,24 @@
 //     </div>
 // )
 // ReactDOM.render(nav,document.getElementById("root"))
-function Header(){
+import React from "react"
+import ReactDOM from "react-dom";
+import Header from "./Header.js";
+import Footer from "./Footer.js";
+
+function App(){
     return(
-        <header>
-            <nav className="nav">
-                <img className= "Image" src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="reactimg" />
-                <ul className = "nav-items">
-                    <li>Pricing</li>
-                    <li>About</li>
-                    <li>Contact</li>
-                </ul>
-            </nav>
-        </header>
-    )
-}
-function Footer(){
-    return(
-    <footer className="footer">
-    <p><small>@poojari development. All rights reserved</small></p>
-    </footer>
-    )
-}
-function Unorderlist(){
-    return(
-        <div>
-        <Header/>
+        <div> 
+        <Header />
         <h1>Reason to like react js</h1>
         <ul>
             <li>it is fun to learning</li>
             <li>nice things we can learn</li>
             <li>I got to get a job</li>
         </ul>
-        <Footer/>
+        <Footer />
         </div>
     )
 }
 
-ReactDOM.render(<Unorderlist/>,document.getElementById("root"))
+ReactDOM.render(<App />,document.getElementById("root"))
