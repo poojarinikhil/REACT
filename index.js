@@ -44,18 +44,35 @@
 // ReactDOM.render(<App />,document.getElementById("root"))
 function Nav() {
     return(
-         <h1 className="navbar">NAVBAR</h1>
+        <div>
+         <img src="https://www.pngfind.com/pngs/m/685-6854994_react-logo-no-background-hd-png-download.png" alt="" width = "40px"/>
+         <ul className = "nav-items">
+            <li>Pricing</li>
+            <li>About</li>
+            <li>Contact</li>
+         </ul>
+         </div>
+    )
+}
+function Header(){
+    return(
+        <Nav/>
+    )
+}
+function Footer(){
+    return(
+        <small>created by nikhil poojari</small>
     )
 }
 ReactDOM.render(
     <div>
-        <img src="https://www.pngfind.com/pngs/m/685-6854994_react-logo-no-background-hd-png-download.png" alt="" width = "40px"/>
-        <Nav />
+        <Header />
         <ul>
             <li>bread</li>
             <li>butter</li>
             <li>idli</li>
         </ul>
+        <Footer/>
     </div>,
         document.getElementById('root')
 ) 
