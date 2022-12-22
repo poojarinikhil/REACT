@@ -1,0 +1,19 @@
+.nav-items{
+    display: flex;
+    padding: 2px;
+}
+.nav-items > li{
+    padding: 20px;
+    list-style: none;
+}
+.nav-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: ;
+}
+.footer{
+    background-color:rgb(86, 86, 86) ;
+    color:#fff;
+    padding: 5px;
+}

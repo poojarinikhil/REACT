@@ -44,7 +44,7 @@
 // ReactDOM.render(<App />,document.getElementById("root"))
 function Nav() {
     return(
-        <div>
+        <div className="nav-bar">
          <img src="https://www.pngfind.com/pngs/m/685-6854994_react-logo-no-background-hd-png-download.png" alt="" width = "40px"/>
          <ul className = "nav-items">
             <li>Pricing</li>
@@ -61,7 +61,9 @@ function Header(){
 }
 function Footer(){
     return(
-        <small>created by nikhil poojari</small>
+        <div className="footer">
+            <small>created by nikhil poojari</small>
+        </div>
     )
 }
 ReactDOM.render(
