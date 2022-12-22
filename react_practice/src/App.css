@@ -36,3 +36,27 @@
     transform: rotate(360deg);
   }
 }
+.nav-items{
+  list-style: none;
+  display: flex;
+}
+.nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-items li{
+  padding: 20px;
+}
+.nav .Image{
+  height: 50px;
+}
+.footer{
+  display: block;
+ background: #0006;
+ color: aliceblue;
+ position:static;
+}
+.header{
+  box-shadow:black;
+}

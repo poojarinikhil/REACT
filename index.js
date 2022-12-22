@@ -21,24 +21,40 @@
 //     </div>
 // )
 // ReactDOM.render(nav,document.getElementById("root"))
-import React from "react"
-import ReactDOM from "react-dom";
-import Header from "./Header.js";
-import Footer from "./Footer.js";
+// import React from "react"
+// import ReactDOM from "react-dom";
+// import Header from "./Header.js";
+// import Footer from "./Footer.js";
 
-function App(){
+// function App(){
+//     return(
+//         <div> 
+//         <Header />
+//         <h1>Reason to like react js</h1>
+//         <ul>
+//             <li>it is fun to learning</li>
+//             <li>nice things we can learn</li>
+//             <li>I got to get a job</li>
+//         </ul>
+//         <Footer />
+//         </div>
+//     )
+// }
+
+// ReactDOM.render(<App />,document.getElementById("root"))
+function Nav() {
     return(
-        <div> 
-        <Header />
-        <h1>Reason to like react js</h1>
-        <ul>
-            <li>it is fun to learning</li>
-            <li>nice things we can learn</li>
-            <li>I got to get a job</li>
-        </ul>
-        <Footer />
-        </div>
+         <h1 className="navbar">NAVBAR</h1>
     )
 }
-
-ReactDOM.render(<App />,document.getElementById("root"))
+ReactDOM.render(
+    <div>
+        <Nav />
+        <ul>
+            <li>bread</li>
+            <li>butter</li>
+            <li>idli</li>
+        </ul>
+    </div>,
+        document.getElementById('root')
+) 
