@@ -15,6 +15,13 @@ const month = date.getMonth()
 const year = date.getFullYear()
 const time = [date.getHours()+":"+date.getMinutes()+":"+date.getSeconds()]
 const link = "https://csi.dbit.in"
+const heading={
+    color: 'rgb(109, 97, 216)',
+    textAlign: 'center',
+    textTransform: "capitalize",
+    fontWeight: "bold",
+    fontFamily:" 'Dancing Script', cursive"
+  }
 // this is react fragment <> if we use div it creats extra space in website so we use react fragments
 ReactDOM.render(<> 
     {/* challenge 1
@@ -32,7 +39,8 @@ ReactDOM.render(<>
         <li>Arcane</li>
         <p>Arcane is also good show with the great characters and good animation.</p>
     </ol> */}
-    <h1 className="heading">Hello, My name is {`${name} ${surname}`}</h1>
+    <h1 style={{color : "cyan", textAlign: "center"}}>Hello, My name is {`${name} ${surname}`}</h1>
+    <h1 style={heading}>Hello, My name is {`${name} ${surname}`}</h1>
     {/* <p>Todays date is {`${day}-${month}-${year}`}</p>
     <p>Todays date is {`${localdate}`}</p>
     <p> And Time is {time}</p>
