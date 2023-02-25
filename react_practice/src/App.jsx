@@ -1,21 +1,21 @@
 import React from "react";
-import Heading from "./Heading";
-import Para from "./Para";
-import {Footer,add,div,multi,sub} from "./Footer";
+import Netflix from "./Netflix";
+import Amazon from "./Amazon";
 
-function App(){
-    return(
-    <>
-    <Heading></Heading>
-    <Para/>
-    <ul>
-        <li>sum of two number is {add(40,45)}</li>
-        <li>sub of two number is {sub(40,45)}</li>
-        <li>mul of two number is {multi(40,45)}</li>
-        <li>div of two number is {div(40,45)}</li>
-    </ul>
-    <Footer></Footer>
-    </>
-    )
-}
+
+const favSeries = "amazon";
+
+const FavS = () => {
+  if (favSeries === "netflix") {
+    return(<Netflix/>)
+  } else {
+    return(<Amazon/>);
+  }
+};
+const App = () => (
+  <>
+    <h1 className="heading_style"> List of Top 5 Netflix Series in 2020 </h1>
+    <FavS/>
+  </>
+);
 export default App;
